@@ -1,0 +1,7 @@
+<h1>Kittens</h1>
+<% @kittens.each do |kitten| %>
+  <ul>
+    <li><%= link_to kitten.name, kitten %></li>
+  </ul>
+<% end %>
+<%= link_to "New Kitten", new_kitten_path %>

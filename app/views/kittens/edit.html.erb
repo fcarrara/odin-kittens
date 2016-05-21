@@ -1,0 +1,17 @@
+<h1>Edit kitten</h1>
+<%= form_for @kitten do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :cuteness %>
+  <%= f.select :cuteness, 1..5 %>
+
+  <%= f.label :softness %>
+  <%= f.select :softness, 1..5 %>
+
+  <%= f.submit "Submit" %>
+
+<% end %>
